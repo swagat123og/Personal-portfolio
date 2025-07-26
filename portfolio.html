@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swagat - Developer Portfolio</title>
+  <link rel="Stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f5f5f5;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #01161e;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .left {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #a9f1df;
+    }
+
+    .first_section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      gap: 40px;
+    }
+
+    .left_section {
+      max-width: 500px;
+      font-size: 2rem;
+    }
+
+    .left_section span {
+      color: #f39ac2;
+    }
+
+    #element {
+      color: #f39ac2;
+      font-size: 1.3rem;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .btn {
+      margin-top: 30px;
+      margin-right: 15px;
+      padding: 12px 25px;
+      border: none;
+      background-color: #f39ac2;
+      color: #01161e;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+      color: #01161e;
+    }
+
+    .right_section img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .second_section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .tex_gray {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    .second_section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #f5f5f5;
+    }
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .vertical {
+      background-color: #01161e;
+      border-left: 4px solid #f39ac2;
+      padding: 15px 20px;
+      border-radius: 10px;
+      width: 250px;
+      position: relative;
+    }
+
+    .vertical img {
+      width: 40px;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      background-color: #f39ac2;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .vertical-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    .vertical-desc {
+      font-size: 0.9rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #01161e;
+      padding: 40px 20px 10px;
+      margin-top: 50px;
+      color: #f5f5f5;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      padding-bottom: 20px;
+    }
+
+    .footer h3 {
+      text-transform: capitalize;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer ul li {
+      margin: 8px 0;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .footer ul li:hover {
+      color: #f39ac2;
+    }
+
+    .footer_last {
+      text-align: center;
+      font-size: 0.85rem;
+      padding-top: 10px;
+      border-top: 1px solid #2c5364;
+    }
+
+    @media (max-width: 768px) {
+      .first_section {
+        flex-direction: column;
+        padding: 40px 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        background: #01161e;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .btn {
+        display: block;
+        margin: 15px auto;
+      }
+
+      .vertical {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Swagat's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="first_section">
+      <div class="left_section">
+        Hi, I am <span>Swagat</span>
+        <div>and I am a Passionate</div>
+        <div id="element"></div>
+        <div>
+          <button class="btn">Download Resume</button>
+          <button class="btn">GitHub</button>
+        </div>
+      </div>
+      <div class="right_section">
+        <img src="portfolio_file/developer-getting-idea-through-video-tutorial-illustration-download-in-svg-png-gif-file-formats--with-web-programming-development-pack-design-illustrations-3781704.png"
+          alt="Developer Image" />
+      </div>
+    </section>
+
+    <section class="second_section">
+      <span class="tex_gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img src="portfolio_file/icons8-css-48.png" alt="" />
+          <div class="vertical-title">CSS Developer (2020-2022)</div>
+          <div class="vertical-desc">Built responsive interfaces and styled applications using modern CSS frameworks.</div>
+        </div>
+        <div class="vertical">
+          <img src="portfolio_file/icons8-c-50.png" alt="" />
+          <div class="vertical-title">C Programmer (2019-2021)</div>
+          <div class="vertical-desc">Solved data structures and algorithmic problems in C for backend modules.</div>
+        </div>
+        <div class="vertical">
+          <img src="portfolio_file/icons8-mysql-50.png" alt="" />
+          <div class="vertical-title">MySQL Developer (2021-2023)</div>
+          <div class="vertical-desc">Designed databases, optimized queries and implemented data-driven features.</div>
+        </div>
+        <div class="vertical">
+          <img src="portfolio_file/icons8-java-48.png" alt="" />
+          <div class="vertical-title">Java Developer (2022-Present)</div>
+          <div class="vertical-desc">Developed backend systems, REST APIs, and enterprise-grade Java apps.</div>
+        </div>
+        <div class="vertical">
+          <img src="portfolio_file/icons8-html-5-48.png" alt="" />
+          <div class="vertical-title">HTML Specialist (2018-2020)</div>
+          <div class="vertical-desc">Built semantic and accessible markup for cross-browser compatibility.</div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="second_section">
+  <span class="tex_gray">Let's Connect</span>
+  <h1>Contact Me</h1>
+  <form id="contact-form" style="display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin-top: 30px;">
+    <input type="text" id="name" name="name" placeholder="Your Name" required
+      style="padding: 12px; border-radius: 6px; border: none; background: #01161e; color: #fff;" />
+    <input type="email" id="email" name="email" placeholder="Your Email" required
+      style="padding: 12px; border-radius: 6px; border: none; background: #01161e; color: #fff;" />
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required
+      style="padding: 12px; border-radius: 6px; border: none; background: #01161e; color: #fff;"></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <p id="form-status" style="margin-top: 15px; font-size: 1rem;"></p>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <h3>Swagat Developer Portfolio</h3>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Resume</li>
+          <li>GitHub</li>
+          <li>Blog</li>
+          <li>Certifications</li>
+          <li>Support</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_last">
+      © 2025 www.swagatdeveloper.com — All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "Back-end Developer", "Full Stack Developer", "Data Analyst"],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+  <script>
+  // Typed.js already working
+
+  // Smooth scroll for navigation links
+  document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Add functionality to "Download Resume" button
+  document.querySelectorAll(".btn")[0].addEventListener("click", function () {
+    // Simulate download (you must replace with your actual resume path)
+    window.open("portfolio_file/swagat resume for iisc.pdf", "_blank");
+  });
+
+  // Add functionality to GitHub button
+  document.querySelectorAll(".btn")[1].addEventListener("click", function () {
+    window.open("https://github.com/swagat123og", "_blank");
+  });
+
+  // Add click event to vertical boxes for demo alert
+  document.querySelectorAll(".vertical").forEach(box => {
+    box.addEventListener("click", function () {
+      alert("You clicked on: " + this.querySelector(".vertical-title").innerText);
+    });
+  });
+
+  // Set current year in footer dynamically
+  const yearSpan = document.createElement("span");
+  yearSpan.textContent = new Date().getFullYear();
+  document.querySelector(".footer_last").innerHTML = `© ${yearSpan.textContent} www.swagatdeveloper.com — All rights reserved.`;
+
+</script>
+
+</body>
+</html>
